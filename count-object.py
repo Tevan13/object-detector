@@ -113,7 +113,7 @@ output_directory = os.path.join(main_directory, folder_name)
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
 
-pdf_filename = os.path.join(output_directory, dt.strftime("%d-%b-%Y %I.%M %p") + ".pdf")
+pdf_filename = os.path.join(output_directory, dt.strftime("%d-%b-%Y %I.%M.%S %p") + ".pdf")
 with PdfPages(pdf_filename) as pdf:
      # Create a single figure with two subplots
     fig, axes = plt.subplots(1, 3, figsize=(13, 12))
