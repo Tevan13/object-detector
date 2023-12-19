@@ -33,6 +33,7 @@ class CameraApp:
 
         # Bind event handler to the root window for key press events
         self.root.bind('<Return>', self.capture_image_on_enter)
+        self.root.bind('<KP_Enter>', self.capture_image_on_enter)  # KP_Enter represents the ENTER key on the numeric keypad
         self.root.bind('q', self.close_app)
 
         self.update()
